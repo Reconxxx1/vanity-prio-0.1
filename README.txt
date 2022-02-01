@@ -1,6 +1,7 @@
  ╭━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━≪ⓈⒸ≫━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╮
    
                               ★READ ME FOR rec-Development Vanity Prio Bot★
+                                 ★do not steal this and say it is yours★
       ★INSTALLATION★
 ★1.Go to https://nodejs.org/en/download/ and dowload nodejs.
 ★2.All moduals are alr inthere so just follow the set up and you should be good!
@@ -13,4 +14,4 @@
   ★5.Go to you server and copy the role id and add it under ROLEID.
   ★6.Go to channelid copy your channel id were you want it to log to and past it under CHANNELID.
   ★7.Now Save it and go back and start the Starter.Bat
-  
+  ★7.if you need help join https://discord.gg/k7ZqTjqd2s
