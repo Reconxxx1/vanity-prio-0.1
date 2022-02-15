@@ -12,19 +12,19 @@ client.on("ready", async() => {
     if (config.console.logs === true) enabled = `Yes`;
     else if (config.console.logs === false) enabled = `No`;
     else enabled = `Can't Detect`;
-    console.log('[rec-DEV] Vanity Prio Bot Has Started!')
+    console.log('[rec-dev] Vanity Prio Bot Has Started!')
         //hyper-Logger!
     const nodelogger = require('hyperz-nodelogger')
 
 
     const logger = new nodelogger()
-    logger.hypelogger(`      rec-DEV`, '550', 'blue', ` [rec-Dev] [Info] Verifying...  Verifyed\n\n [SC-Dev] [Info] Bot Name: ${client.user.tag}\n\n [SC-Dev] [Info] Bot Status: ${client.user.presence.status}\n\n [SC-Dev] [Info] Allowed Users: ${client.user.id}\n\n [SC-Dev] [Info] Number of Servers: ${client.guilds.cache.size}\n\n [SC-Dev] [Info] Website:https://clapz.dev!\n\n [SC-Dev] [Info] Bot Verison:1.0.0\n\n\ [SC-Dev] [Info] Bot Logging:Console Logging \n\n\n                    ▼BELOW▼`, 'disabled', 'blue', 'single', false)
+    logger.hypelogger(`      rec-dev`, '550', 'blue', ` [rec-dev] [Info] Verifying...  Verifyed\n\n [SC-dev] [Info] Bot Name: ${client.user.tag}\n\n [SC-dev] [Info] Bot Status: ${client.user.presence.status}\n\n [SC-dev] [Info] Allowed Users: ${client.user.id}\n\n [SC-dev] [Info] Number of Servers: ${client.guilds.cache.size}\n\n [SC-dev] [Info] Website:https://clapz.dev!\n\n [SC-dev] [Info] Bot Verison:1.0.0\n\n\ [SC-dev] [Info] Bot Logging:Console Logging \n\n\n                    ▼BELOW▼`, 'disabled', 'blue', 'single', false)
 
     async function checkVersion() {
         let version = "1.0.0";
         try {
             let rescheck = await axios({
-                url: 'https://raw.githubusercontent.com/Lmaoclapz/Clapz.DevBot/main/README.md?token=AUU3PO7C3SRKNN6CGSUFOBTBBMG5Q'
+                url: 'https://raw.githubusercontent.com/Lmaoclapz/Clapz.devBot/main/README.md?token=AUU3PO7C3SRKNN6CGSUFOBTBBMG5Q'
             });
             const hasNewVersion = rescheck.data.version !== version;
             if (hasNewVersion) console.log(`\x1b[93mAn update is available!\x1b[0m\nChanges: ${rescheck.data.changelog}`);
@@ -33,16 +33,16 @@ client.on("ready", async() => {
     checkVersion()
 
     //regular colsol log if u dont want hyper log
-    //console.log(`[rec-Dev-Info]: Verified!}`);
-    //console.log(`[rec-Dev-Info]: Logged in as: ${client.user.tag}`);
-    //console.log(`[rec-Dev-Info]: Current status: ${client.user.presence.status}`);
-    //console.log(`[rec-Dev-Info]: Website:`);
-    //console.log(`[rec-Dev-Info]: User ID: ${client.user.id}`);
-    //console.log(`[rec-Dev-Info]: Servers: ${client.guilds.cache.size}`);
-    //console.log(`[rec-Dev-Info]: Channels: ${client.channels.cache.size}`);
-    //console.log(`[rec-Dev-Info]: Allowed Users: ${client.user.id}`);
-    //console.log(`[rec-Dev-Info]: Bot Verison:1.0.0`);
-    //console.log(`[rec-Dev-Info]: Bot Logging: Console Logging\n\n                  ▼BELOW▼`);
+    //console.log(`[rec-dev-Info]: Verified!}`);
+    //console.log(`[rec-dev-Info]: Logged in as: ${client.user.tag}`);
+    //console.log(`[rec-dev-Info]: Current status: ${client.user.presence.status}`);
+    //console.log(`[rec-dev-Info]: Website:`);
+    //console.log(`[rec-dev-Info]: User ID: ${client.user.id}`);
+    //console.log(`[rec-dev-Info]: Servers: ${client.guilds.cache.size}`);
+    //console.log(`[rec-dev-Info]: Channels: ${client.channels.cache.size}`);
+    //console.log(`[rec-dev-Info]: Allowed Users: ${client.user.id}`);
+    //console.log(`[rec-dev-Info]: Bot Verison:1.0.0`);
+    //console.log(`[rec-dev-Info]: Bot Logging: Console Logging\n\n                  ▼BELOW▼`);
 })
 
 //Bot Status
@@ -56,12 +56,12 @@ client.once('ready', () => {
 client.on('message', message => {
     if (message.content === ".help") {
         const embed = new discord.MessageEmbed()
-            .setAuthor(`${message.author.username} in ${message.channel.name}`, `${message.author.displayAvatarURL({dynamic: true })}`, 'https://discord.gg/scdev')
+            .setAuthor(`${message.author.username} in ${message.channel.name}`, `${message.author.displayAvatarURL({dynamic: true })}`, 'https://discord.gg/k7ZqTjqd2s')
             .setColor(config.embed.help)
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
-            .addFields({ name: 'Support:', value: 'If you would like to add this bot to your server join https://discord.gg/scdev' }, )
+            .addFields({ name: 'Support:', value: 'If you would like to add this bot to your server join https://discord.gg/k7ZqTjqd2s' }, )
             .setTimestamp()
-            .setFooter('©rec-Development • .gg/recdev', '');
+            .setFooter('©rec-development • .gg/recdev', '');
         message.channel.send(embed);
     }
 })
@@ -70,12 +70,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === "hi") {
         const embed = new discord.MessageEmbed()
-            .setAuthor(`${message.author.username} in ${message.channel.name}`, `${message.author.displayAvatarURL({dynamic: true })}`, 'https://discord.gg/scdev')
+            .setAuthor(`${message.author.username} in ${message.channel.name}`, `${message.author.displayAvatarURL({dynamic: true })}`, 'https://discord.gg/k7ZqTjqd2s')
             .setColor(config.embed.hi)
             .setDescription('HI! 👋,Hows your day!')
             .setThumbnail(message.guild.iconURL({ dynamic: true }))
             .setTimestamp()
-            .setFooter('©rec-Development • .gg/recdev', '');
+            .setFooter('©rec-development • .gg/recdev', '');
         message.channel.send(embed);
     }
 })
@@ -99,7 +99,7 @@ client.on('presenceUpdate', async(oldm, newm) => {
                         .setDescription(`__**<@${newm.user.id}>**__ Has Added Vantity (${config.vanityprio.discordvanity}) to their account, thier role has been added!`)
                         .setTimestamp()
                         .setThumbnail(newm.guild.iconURL({ dynamic: true }))
-                        .setFooter('©rec-Development • .gg/recdev', '');
+                        .setFooter('©rec-development • .gg/recdev', '');
                     if (config.console.logs === true) client.channels.cache.get(config.vanityprio.channelid).send(clapz);
                     //CONSOLE LOG MESSAGE
                     console.log(`@CONSOLE-LOGER!-User:${newm.user.tag} Has Added Vantity:${config.vanityprio.vanity} Into Their Status! Time:{${time}}`)
@@ -114,12 +114,12 @@ client.on('presenceUpdate', async(oldm, newm) => {
                     .setDescription(`__**<@${newm.user.id}>**__ Has removed the vanity ${config.vanityprio.discordvanity} from Their acount, their role has been removed!`)
                     .setTimestamp()
                     .setThumbnail(newm.guild.iconURL({ dynamic: true }))
-                    .setFooter('©rec-Development • .gg/recdev', '');
+                    .setFooter('©rec-development • .gg/recdev', '');
                 if (config.console.logs === true) client.channels.cache.get(config.vanityprio.channelid).send(clapzremoved);
                 //CONSOLE LOG MESSAGE
                 console.log(`@CONSOLE-LOGER!-User:${newm.user.tag} Has Taken Out Vantity:${config.vanityprio.discordvanity} Of Their Status! Time:{${time}}`)
             }
         } catch (e) {}
     })
-    //BY Kronos&Clapzs
+    //BY recon#6666
 client.login(config.bot.login)

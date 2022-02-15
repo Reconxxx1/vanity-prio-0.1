@@ -1,15 +1,15 @@
 {
 
     "bot": {
-        "login": ""
+        "login": "bot token here"
     },
 
     "vanityprio": {
-        "channelid": "937971899567325241",
+        "channelid": "channel id of where you want the bot to link to",
 
-        "roleid": "938004678925496390",
+        "roleid": "role id that you want the bot to give",
 
-        "discordvanity": ".gg/taprz"
+        "discordvanity": "vanity is .gg/..."
     },
 
     "embed": {

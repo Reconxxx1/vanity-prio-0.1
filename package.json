@@ -1,7 +1,7 @@
 {
-    "name": "reconsPrioVanityBot",
+    "name": "rec-dev-Vanity-Prio-Bot",
     "version": "1.0.0",
-    "description": "A Discorde Bot That Watches Peoples Status! :)",
+    "description": "join rec dev today if you want this bot",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
