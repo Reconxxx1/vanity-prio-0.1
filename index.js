@@ -1,3 +1,5 @@
+//dont fucking claim this as yours pussy dm recon#2306 if you need any help
+
 const discord = require("discord.js")
 const client = new discord.Client()
 const config = require("./config.json")

@@ -14,4 +14,4 @@
   ★5.Go to you server and copy the role id and add it under ROLEID.
   ★6.Go to channelid copy your channel id were you want it to log to and past it under CHANNELID.
   ★7.Now Save it and go back and start the Starter.Bat
-  ★7.if you need help join https://discord.gg/k7ZqTjqd2s
+  ★7.if you need help join https://discord.gg/ZS7B3agKGC
